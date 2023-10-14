@@ -1,0 +1,9 @@
+.h1{
+  margin-bottom: 20px;
+  font-size: 4rem;
+  font-family: Poppins;
+  line-height: 67px;
+}
+.ponto{
+  color: rgb(255, 166, 0);
+}

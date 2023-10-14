@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 246, 246);
+    
+    
+    
+    
+}
+header{
+    margin: 60px;
+}
+#logo{
+    margin: auto;
+    display: block;
+    margin-bottom: 60px;
+    
+    
+    
+}
+
+
+#menu{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+
+
+}
+li>a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid white;
+
+}
+li>a:hover{
+    border: 2px solid red;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: white;
+    align-items: center;
+    
+    
+    
+}
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+#foto{
+    grid-column: 2 ;
+    width: 100%;
+}
+#txt1{
+    display: grid;
+    gap: 20px;
+    justify-items: end;
+    padding: 40px;
+    position: relative;
+    
+
+}
+#txt1::after{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+}
+p{
+    font-size: 1.2rem;
+    grid-column: 2 /-1;
+    text-align: left;
+    
+}
+#hh{
+    font-size: 2rem;
+
+}
+#txt1>a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    background-color: red;
+    display: inline-block;
+    border-radius: 5px;
+    transition: .3s;
+    
+}
+#txt1>a:hover{
+    background-color: rgb(192, 0, 0);
+}
+#vanta{
+    display: grid;
+    background-image: url(onda.svg);
+    background-repeat: repeat;
+    background-color: rgb(255, 246, 246);
+    color: rgb(199, 199, 199);
+    justify-items: center;
+    text-align: right;
+    padding: 0px;
+}
+#pp{
+    font-size: 4.5rem;
+}
+#txt2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    gap: 10px 20px;
+    padding: 20px;
+    border-left: 5px  solid rgb(255, 255, 255);
+    background-color: #f7f7f7;
+    
+    
+
+}
+#txt2:hover{
+    border-left: 5px  solid red;
+}
+#pai{
+    padding: 50px;
+}
+h3{
+    grid-column: 2;
+    
+}
+footer{
+    background-color: white;
+    height: 40px;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+#ppp{
+    text-align: center;
+    
+}
+.rig{
+    text-align: right;
+}
+@media(max-width: 950px) and (min-width:730px) {
+    body{
+       
+        
+    }
+    #foto{
+        width: 100%;
+
+    }
+    #vanta>h1 {
+        font-size: 2rem;
+        word-wrap: wrap;
+    }
+    section{
+        grid-template-columns: auto auto;
+        
+
+    }
+    #txt1::after{
+        top: 50px;
+    }
+    footer{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        height: 10px;
+    }
+    #ppp{
+        font-size: .8rem;
+    }
+
+
+}
+@media(max-width:730px){
+    body{
+     
+    }
+    section{
+        display: block;
+    }
+    #txt1::after{
+        display: none;
+    }
+    #vanta>h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 40px;
+        word-wrap: wrap;
+        margin: auto;
+    }
+
+   
+    
+    footer{
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        
+        height: 0px;
+        text-align: center;
+
+    }
+    
+    #txt1{
+        justify-items: center;
+        text-align: center;
+        display: grid;
+    
+    }
+    .bagulho{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .rig{
+        text-align: center;
+    }
+    #ppp{
+        font-size: .8rem;
+    }
+    #menu{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

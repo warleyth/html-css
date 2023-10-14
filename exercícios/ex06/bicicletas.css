@@ -1,0 +1,128 @@
+.bicicletas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 40px;
+
+  position: relative;
+  
+}
+
+.bicicletas h2::after{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 10px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: 0px;
+}
+
+.fotobike{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  
+}
+.bicicletas span{
+  grid-template-columns: 1/1;
+  display: inline-block;
+  place-self: start end;
+  position: absolute;
+  top: 20px;
+  font-weight: bold ;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+
+  
+}
+.texto1{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.bicicletas h2{
+  margin: 20px 0px;
+  grid-column: 1 /-1;
+}
+.bicicletas p{
+  grid-column: 1/ -1;
+}
+.mais {
+  padding-right: 60px;
+  position: relative;
+  place-self: end;
+  
+}
+
+.mais::after{
+  content: "";
+  background-image: url(icones/seta.svg);
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  display: block;
+  right: 30px;
+  top: 23px;
+  transition: .3s;
+  background-repeat: no-repeat;
+}
+.mais:hover::after{
+  right: 25px;
+}
+.bicicleta-bg{
+  background-image: linear-gradient( to right, white 30% , var(--cor-11) 0%  );
+ 
+  
+  padding: 10px 0px;
+}
+.bicicletas li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.texto1 img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+@media (max-width: 900px){
+  .bicicletas{
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-bg{
+    background-color: var(--cor-11);
+    background-image: none;
+  }
+  .texto1{
+    grid-template-columns: 1fr;
+  }
+  .mais{
+    place-self: start;
+    margin-top: 20px;
+  }
+  .bicicletas ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .bicicletas p{
+    margin-bottom: 20px;
+  }
+  .texto1 img{
+    align-items: center;
+    width: 25px;
+
+  }
+}
+@media (max-width: 600px){
+  .mais::after{
+    top: 18px;
+  }
+}

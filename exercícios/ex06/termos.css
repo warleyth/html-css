@@ -1,0 +1,16 @@
+.termos{
+  padding: 80px 0px;
+ ;
+}
+.termo1{
+   max-width: 850px
+}
+.termo1 h2{
+  padding: 40px 0px;
+  font-weight: 600;
+
+}
+.termo1 li{
+  line-height: 30px;
+  padding-bottom: 20px;
+}
